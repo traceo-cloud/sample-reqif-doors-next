@@ -1,0 +1,162 @@
+{
+  "schema": "traceo.import-receipt/v1",
+  "source_sha256": "d6391ee17b72a49527a230cc4877b7ea2a99cc874220a76db5ddb168db75ac59",
+  "declared_format": "reqif",
+  "detected_tool": "doors_next",
+  "tool_id": "IBM Engineering Requirements Management DOORS Next",
+  "verdict": "clean",
+  "counts": {
+    "objects": {
+      "in": 7,
+      "out": 7
+    },
+    "headings": {
+      "in": 0,
+      "out": 0
+    },
+    "attributes": {
+      "in": 26,
+      "out": 26
+    },
+    "enumeration_values": {
+      "in": 9,
+      "out": 9
+    },
+    "link_types": {
+      "in": 2,
+      "out": 2
+    },
+    "links": {
+      "in": 3,
+      "out": 3
+    },
+    "hierarchy_nodes": {
+      "in": 7,
+      "out": 7
+    },
+    "history_entries": {
+      "in": 0,
+      "out": 0
+    },
+    "baselines": {
+      "in": 0,
+      "out": 0
+    },
+    "attachments": {
+      "in": 0,
+      "out": 0
+    }
+  },
+  "links_by_type": {
+    "Derived From": {
+      "in": 2,
+      "out": 2
+    },
+    "Satisfies": {
+      "in": 1,
+      "out": 1
+    }
+  },
+  "attributes_by_datatype": {
+    "DATE": {
+      "in": 1,
+      "out": 1
+    },
+    "ENUMERATION": {
+      "in": 8,
+      "out": 8
+    },
+    "INTEGER": {
+      "in": 6,
+      "out": 6
+    },
+    "XHTML": {
+      "in": 11,
+      "out": 11
+    }
+  },
+  "drops": [],
+  "transforms": [
+    {
+      "cls": "objects",
+      "source_ref": "_so_1001",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status, priority"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "_so_1002",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "_so_1002",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "_so_1003",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "_so_1003",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "_so_1004",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "_so_1004",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status, priority"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "_so_1005",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status, priority"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "_so_1006",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "_so_1006",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status"
+    },
+    {
+      "cls": "attributes",
+      "source_ref": "_so_1007",
+      "reason": "rich_text_flattened",
+      "detail": "description derived from ReqIF.Text; the XHTML is kept in metadata.attributes"
+    },
+    {
+      "cls": "objects",
+      "source_ref": "_so_1007",
+      "reason": "defaulted_field",
+      "detail": "defaulted: type, classification, status"
+    }
+  ],
+  "id_map": {
+    "_so_1001": "1001",
+    "_so_1002": "1002",
+    "_so_1003": "1003",
+    "_so_1004": "_so_1004",
+    "_so_1005": "1005",
+    "_so_1006": "1006",
+    "_so_1007": "1007"
+  }
+}
